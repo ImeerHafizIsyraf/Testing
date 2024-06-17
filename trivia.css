@@ -1,0 +1,118 @@
+    body {
+        background-image: url('Background-image-3.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+        
+    .orderlistcolor {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0;
+        margin: 0;
+    }
+    .orderlist {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-top: 3px solid white; 
+        border-bottom: 3px solid white;
+        padding-top: 10px;
+        padding-left: 0;
+        margin: 0;
+    }
+    .orderlist a {
+        color: inherit;
+        text-decoration: none; 
+    }
+    .orderlist a:hover {
+        color: rgb(252, 145, 22);
+        transition: 0.4s ease-in-out;
+    }
+    .orderlist li {
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+        
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px auto; 
+        font-size: 2;
+        min-width: 400px;
+        font-family: Montserrat, sans-serif; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+    } 
+        
+    .content-table thead tr {
+        background-color: rgb(252, 145, 22);
+        color: #ffffff;
+        text-align: center; 
+        font-weight: bold;
+    }
+        
+    .content-table th, .content-table td {
+        padding: 12px 15px;
+    }
+        
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+        
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+        
+    .content-table tbody tr:nth-of-type(odd) {
+        background-color: #f3f3f3;
+    }
+        
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid rgb(252, 145, 22);
+    }
+        
+    .content-table tbody tr:hover td:hover {
+        color: rgb(252, 145, 22);
+        transition: 0.4s ease-in-out;
+    }
+        
+    .content-table th.summary {
+        width: 400px;
+    }
+        
+    img {
+        transition: transform 1s;
+    }
+        
+    img:hover {
+        transform: scale(1.02);
+    }
+        
+    .laptop-category {
+        border-right: 2px solid rgb(212, 212, 212); 
+    }
+    
+    
+    .content-table td {
+        padding: 12px 15px;
+        border-left: 2px solid rgb(230, 230, 230);
+    }
+    
+        
+    .content-table th:last-of-type {
+        border-right: 2px solid rgb(212, 212, 212);
+    }
+
+    .Container {
+        padding-bottom: 50px;
+    }
+
+
+    .content-table td:nth-child(1),
+    .content-table th.ranking-column {
+        text-align: center;
+    }

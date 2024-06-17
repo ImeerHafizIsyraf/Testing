@@ -1,0 +1,146 @@
+.shadow {
+    text-shadow: 5px 2px 4px #000000;
+}
+
+.Container.animated {
+    animation: fadeIn 2s;
+}
+
+body {
+    background-image: url('Background-image-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formcontainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+form {
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    background-color:rgba(0, 0, 0, 0.8);
+    width: 80%;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+
+input[type=checkbox] {
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(252, 145, 22);
+    transition: 0.5s ease-in-out;
+}
+
+input[type=reset]:hover {
+    background-color: rgb(252, 145, 22);
+    transition: 0.5s ease-in-out;
+}
+
+table {
+    margin-top: 10px;
+}
+
+table td {
+    padding-right: 20px;
+}
+
+.gender-selector {
+    display: flex;
+    align-items: center;
+}
+
+.gender-option {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gender-option input[type="radio"] {
+    display: none;
+}
+
+.gender-option label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.gender-option input[type="radio"]:checked + label {
+    background-color: rgb(252, 145, 22);
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    height: 100px;
+    resize: none;
+    font-family: Montserrat, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: Montserrat, sans-serif;    
+}

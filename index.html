@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="copyright.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital@0;1&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" href="website icon.png" type="image/png">
+    <style>
+        .Container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-shadow: 5px 2px 4px #000000;
+            padding: 20px;
+        }
+
+        .Container.animated {
+            animation: fadeIn 7s;
+        }
+
+        .text-container {
+            max-width: 60%;
+            padding: 20px;
+        }
+        .pic {
+            max-width: 35%;
+            padding-right: 100px;
+            border-radius: 10px;
+            overflow: hidden; 
+        }
+        
+        .pic img {
+            width: 550px;
+            height: 550px;
+            margin-top: 30px;
+            transform: rotate(0deg);
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding-bottom: 10px;
+        }
+        
+        body {
+            padding-top: 100px; 
+            margin: 0;
+            overflow: hidden;
+            
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .learn-more-button {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 20px 0 0 0;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            font-family: Montserrat, sans-serif;    
+        }
+
+        .learn-more-button:hover {
+            background-color: rgb(252, 145, 22);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .learn-more-button:not(:hover) {
+            transition: transform 0.5s ease-in-out;
+            transform: translateY(0);
+        }
+
+        .loader-wrapper {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .loader {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            border: 4px solid #Fff;
+            animation: loader 2s infinite ease;
+        }
+          
+        .loader-inner {
+            vertical-align: top;
+            display: inline-block;
+            width: 100%;
+            background-color: rgb(252, 145, 22);
+            animation: loader-inner 2s infinite ease-in;
+        }
+          
+        @keyframes loader {
+            0% { transform: rotate(0deg);}
+            25% { transform: rotate(180deg);}
+            50% { transform: rotate(180deg);}
+            75% { transform: rotate(360deg);}
+            100% { transform: rotate(360deg);}
+        }
+          
+        @keyframes loader-inner {
+            0% { height: 0%;}
+            25% { height: 0%;}
+            50% { height: 100%;}
+            75% { height: 100%;}
+            100% { height: 0%;}
+        }
+
+        .Container {
+            animation: fadeIn 6.5s;
+        
+        }
+        
+        body{
+            background-color:transparent;
+         }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+        
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+
+<div class="loader-wrapper">
+    <div class="loader">
+        <div class="loader-inner"></div>
+    </div>
+</div>
+
+<body style="background-image: url('Background-image-3.jpg'); background-size: 100vw 100vh; background-repeat: no-repeat; margin: 0; padding: 0;">
+
+    <header>
+        <img src="banner 8.png" style="width: 100%" class="banner">
+        <nav class="Menu">
+            <div class="Choices">
+                <a href="home page.html"><b>Home</a></b>
+                <a href="about me.html"><b>About Me</a></b>
+                <a href="educational background.html"><b>Educational Background</a></b>
+                <a href="hobbies and interest.html"><b>Interests</a></b>
+                <a href="trivias.html"><b>Trivias</a></b>
+                <div class="dropdown">
+                    <button class="dropbtn"><b>Gallery</b><span class="chevron">&#9660;</span></button>
+                    <div class="dropdown-content">
+                        <a href="gallery me.html"><b>Me & Friends</a></b>
+                        <a href="gallery family.html"><b>Family Gallery</a></b>
+                    </div>
+                </div>
+                <a href="feedback.html"><b>Feedback</a></b>
+            </div>
+            <div class="social-media-icons">
+                <a href="https://www.linkedin.com/in/imeer-hafiz-isyraf-b6582b301/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/usernamewastaken0_0/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=61551690045565" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/Penguin4Lifes" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="Container">
+        <div class="text-container">
+            <p style="font-family: Montserrat, sans-serif; font-size:60px; color:rgb(255, 255, 255); font-optical-sizing: auto; font-weight: 400; font-style: normal; text-align: left; margin: 0;">
+                <b>My name is Imeer</b>
+            </p>
+            <p style="font-family: Montserrat, sans-serif; font-size:30px; color:rgb(255, 255, 255); margin: 10px 0 0 0;">
+                <b>A dedicated student enrolled in a Diploma program in Information Management, with a focused specialization in Library Informatics.</b>
+            </p>
+            <a href="about me.html" class="learn-more-button">Learn More</a>
+        </div>
+        <div class="pic">
+            <img src="PHOTO-2024-06-01-01-56-37.jpg" alt="Imeer Hafiz Isyraf">
+        </div>
+    </div>
+
+    <div class="copyright" id="lastModified">
+        <footer>© 2024 Imeer Hafiz Isyraf. All rights reserved.</footer>
+    </div>
+
+    <script>
+        // Sticky navbar functionality
+        window.onscroll = function() {
+            stickyNavbar();
+        };
+
+        var navbar = document.querySelector(".Menu");
+        var sticky = navbar.offsetTop;
+
+        function stickyNavbar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        // Display last modified date and hide loader
+        window.onload = function() {
+            var latestDate = new Date(document.lastModified);
+            var formattedDate = latestDate.toLocaleString();
+            document.getElementById("lastModified").innerHTML = "© 2024 Imeer Hafiz Isyraf. All rights reserved. Last update: " + formattedDate;
+
+            // Hide loader and show body content
+            setTimeout(function() {
+                document.querySelector('.loader-wrapper').style.display = 'none';
+                document.body.style.visibility = 'visible';
+            }, 2000); // Display loader for 2 seconds (2000 milliseconds)
+        };
+    </script>
+    
+    
+</body>
+
+</html>

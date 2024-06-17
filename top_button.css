@@ -1,0 +1,57 @@
+.back-to-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: 0.2 ease-out;
+}
+
+.back-to-top span {
+    color: white;
+    font-size: 2rem;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+    background-color: rgb(252, 145, 22);
+}
+
+.back-to-top:hover span {
+    transform: translateY(-4px);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: auto; /* Changed from overlay to auto */
+}
+
+/* Webkit (Safari/Chrome) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    opacity: 0; /* Change the opacity to make it less visible */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px; /* Adjust the radius to make it more rounded */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(252, 145, 22); /* Change color to orange on hover */
+}
+
+
+
+
+
+
+
